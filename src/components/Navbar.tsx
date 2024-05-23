@@ -4,7 +4,7 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
-import logo from "../assets/image.svg";
+import logo from "/logo.svg";
 
 const Navbar = () => {
   const openInNewTab = (url: string) => {
