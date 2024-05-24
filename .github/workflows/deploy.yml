@@ -37,7 +37,7 @@ jobs:
           check-latest: true
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm update
       - name: Build
         run: npm run build
       - name: Setup Pages
