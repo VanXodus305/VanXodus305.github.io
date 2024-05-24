@@ -17,24 +17,36 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-24 h-24" />
       </div>
       <div className="flex flex-shrink-0 items-center justify-center gap-7 text-2xl flex-wrap">
-        <FaLinkedinIn
-          className="cursor-pointer transition-all ease-in-out duration-500 hover:text-yellow-500"
-          onClick={() =>
-            openInNewTab("https://www.linkedin.com/in/vanxodus305")
-          }
-        />
-        <FaGithub
-          className="cursor-pointer transition-all ease-in-out duration-500 hover:text-yellow-500"
-          onClick={() => openInNewTab("https://github.com/VanXodus305")}
-        />
-        <FaInstagram
-          className="cursor-pointer transition-all ease-in-out duration-500 hover:text-yellow-500"
-          onClick={() => openInNewTab("https://instagram.com/vanxodus305")}
-        />
-        <FaXTwitter
-          className="cursor-pointer transition-all ease-in-out duration-500 hover:text-yellow-500"
-          onClick={() => openInNewTab("https://x.com/VanXodus305")}
-        />
+        <div className="group relative">
+          <FaLinkedinIn
+            className="cursor-pointer transition-all ease-in-out duration-300 hover:text-gold-200"
+            onClick={() =>
+              openInNewTab("https://www.linkedin.com/in/vanxodus305")
+            }
+          />
+          <span className="navbar-tooltip group-hover:scale-100">LinkedIn</span>
+        </div>
+        <div className="group relative">
+          <FaGithub
+            className="cursor-pointer transition-all ease-in-out duration-300 hover:text-gold-200"
+            onClick={() => openInNewTab("https://github.com/VanXodus305")}
+          />
+          <span className="navbar-tooltip group-hover:scale-100">GitHub</span>
+        </div>
+        <div className="group relative">
+          <FaInstagram
+            className="cursor-pointer transition-all ease-in-out duration-300 hover:text-gold-200"
+            onClick={() => openInNewTab("https://instagram.com/vanxodus305")}
+          />
+          <span className="navbar-tooltip group-hover:scale-100">Instagram</span>
+        </div>
+        <div className="group relative">
+          <FaXTwitter
+            className="cursor-pointer transition-all ease-in-out duration-300 hover:text-gold-200"
+            onClick={() => openInNewTab("https://x.com/VanXodus305")}
+          />
+          <span className="navbar-tooltip group-hover:scale-100">X</span>
+        </div>
       </div>
     </nav>
   );
