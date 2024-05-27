@@ -4,7 +4,7 @@ import Tilty from "react-tilty";
 
 const Hero = () => {
   return (
-    <div className="border-b border-gold-200/80 pb-10 md:mb-36">
+    <div className="border-b border-gold-200/80 pb-10 mb-20">
       <div className="flex flex-wrap items-center">
         <div className="w-full md:w-[60%] lg:w-2/3 md:pr-8 lg:pr-0">
           <div className="flex flex-col items-start">
@@ -21,12 +21,7 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-[40%] lg:w-1/3">
           <div className="flex justify-center flex-shrink">
-            <Tilty
-              speed={500}
-              scale={1.005}
-              gyroscope={true}
-              perspective={2000}
-            >
+            <Tilty speed={500} scale={1.005} perspective={2000}>
               <img
                 src={profilePic}
                 alt="Profile Picture"
