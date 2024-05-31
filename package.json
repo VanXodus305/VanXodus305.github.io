@@ -13,7 +13,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "latest",
-    "react-tilty": "^3.0.0"
+    "react-tilty": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",

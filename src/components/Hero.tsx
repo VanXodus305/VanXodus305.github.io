@@ -3,8 +3,13 @@ import profilePic from "../assets/Profile Picture.jpg";
 import Tilty from "react-tilty";
 
 const Hero = () => {
+  const isTouchDevice =
+    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    ) || "ontouchstart" in window;
+
   return (
-    <div className="border-b border-gold-200/80 pb-10 mb-20">
+    <div className="border-b border-gold-200/80 pb-20 mb-20">
       <div className="flex flex-wrap items-center">
         <div className="w-full md:w-[60%] lg:w-2/3 md:pr-8 lg:pr-0">
           <div className="flex flex-col items-start">
@@ -21,14 +26,22 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-[40%] lg:w-1/3">
           <div className="flex justify-center flex-shrink">
-            <Tilty speed={500} scale={1.005} perspective={2000}>
+            {isTouchDevice == true ? (
               <img
                 src={profilePic}
                 alt="Profile Picture"
                 className="rounded-3xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-500"
-                data-tilt
               ></img>
-            </Tilty>
+            ) : (
+              <Tilty speed={500} scale={1.005} perspective={2000}>
+                <img
+                  src={profilePic}
+                  alt="Profile Picture"
+                  className="rounded-3xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-500"
+                  data-tilt
+                ></img>
+              </Tilty>
+            )}
           </div>
         </div>
       </div>
