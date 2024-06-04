@@ -20,7 +20,7 @@ const Projects = () => {
                 alt={project.title}
                 src={project.image}
               ></img>
-              <span className="flex flex-row gap-4 absolute text-0 group-hover:text-[28px] group-hover:text-neutral-100 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-0">
+              <span className="flex flex-row gap-4 absolute scale-0 group-hover:scale-100 text-[28px] text-neutral-100 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-300">
                 <FaGithub
                   className="hover:text-gold-200 transition-all ease-in-out duration-150 cursor-pointer"
                   onClick={() => openInNewTab(project.github)}
