@@ -1,19 +1,32 @@
 import { EXPERIENCES } from "../constants";
 import openInNewTab from "../utilities/openLink";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
     <div className="border-b border-gold-200/80 pb-20">
-      <h1 className="my-20 text-center text-[38px] font-normal tracking-tight leading-snug lg:text-[46px] bg-clip-text select-none transition-all ease-in-out duration-500 bg-gradient-to-r from-neutral-200 to-neutral-200 bg-[length:200%_100%] bg-left hover:bg-[length:200%_100%] hover:bg-right hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 text-transparent">
-        Experience
-      </h1>
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.75, ease: "easeInOut" }}
+      >
+        <h1 className="my-20 text-center text-[38px] font-normal tracking-tight leading-snug lg:text-[46px] bg-clip-text select-none transition-all ease-in-out duration-500 bg-gradient-to-r from-neutral-200 to-neutral-200 bg-[length:200%_100%] bg-left hover:bg-[length:200%_100%] hover:bg-right hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 text-transparent">
+          Experience
+        </h1>
+      </motion.div>
+
       <div className="flex flex-col gap-20">
         {EXPERIENCES.map((experience, index) => (
           <div
             className="flex flex-wrap items-center justify-center gap-8"
             key={index}
           >
-            <div className="w-full md:w-1/5 flex flex-col items-center justify-center gap-4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.75, ease: "easeInOut" }}
+              className="w-full md:w-1/5 flex flex-col items-center justify-center gap-4"
+            >
               <img
                 src={experience.logo}
                 alt={experience.company}
@@ -23,8 +36,13 @@ const Experience = () => {
               <p className="text-md font-medium text-gold-200">
                 {experience.year}
               </p>
-            </div>
-            <div className="w-full max-w-xl md:w-3/4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.75, ease: "easeInOut" }}
+              className="w-full max-w-xl md:w-3/4"
+            >
               <h1 className="mb-4 font-semibold">
                 {experience.role} -{" "}
                 <span
@@ -45,7 +63,7 @@ const Experience = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
