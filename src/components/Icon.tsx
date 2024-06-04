@@ -1,3 +1,5 @@
+import openInNewTab from "../utilities/openLink";
+
 interface Props {
   size: number;
   link?: string;
@@ -5,10 +7,6 @@ interface Props {
 }
 
 const Icon = ({ children, size, link }: Props) => {
-  const openInNewTab = (url: string | undefined) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <div
       className={`group rounded-2xl hover:bg-gradient-to-tr hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 p-0 hover:p-0.5 transition-all ease-in-out duration-300 bg-transparent items-center justify-center flex cursor-pointer`}

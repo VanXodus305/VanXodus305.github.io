@@ -1,13 +1,9 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/Profile Picture.jpg";
 import Tilty from "react-tilty";
+import isTouchDevice from "../utilities/isTouchDevice";
 
 const Hero = () => {
-  const isTouchDevice =
-    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    ) || "ontouchstart" in window;
-
   return (
     <div className="border-b border-gold-200/80 pb-20 mb-20">
       <div className="flex flex-wrap items-center">
@@ -19,18 +15,18 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 bg-clip-text text-transparent tracking-tight text-2xl select-none">
               Full Stack Developer
             </span>
-            <p className="mt-2 max-w-xl pt-6 font-normal tracking-tight mb-10 md:mb-0 text-balance">
+            <p className="mt-2 max-w-[85%] pt-6 font-normal tracking-tight mb-10 md:mb-0 text-balance">
               {HERO_CONTENT}
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[40%] lg:w-1/3">
-          <div className="flex justify-center flex-shrink">
+        <div className="w-full md:w-[40%] lg:w-1/3 items-center justify-center flex">
+          <div className="flex justify-center items-center flex-shrink max-w-[400px]">
             {isTouchDevice == true ? (
               <img
                 src={profilePic}
                 alt="Profile Picture"
-                className="rounded-3xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-500"
+                className="rounded-3xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-500 justify-center"
               ></img>
             ) : (
               <Tilty speed={500} scale={1.005} perspective={2000}>

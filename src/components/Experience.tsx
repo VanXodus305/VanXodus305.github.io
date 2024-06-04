@@ -1,4 +1,5 @@
 import { EXPERIENCES } from "../constants";
+import openInNewTab from "../utilities/openLink";
 
 const Experience = () => {
   return (
@@ -16,18 +17,24 @@ const Experience = () => {
               <img
                 src={experience.logo}
                 alt={experience.company}
-                className="rounded-2xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-300 max-w-[45%] md:max-w-[70%] bg-neutral-200 "
+                className="rounded-2xl hover:shadow-lg hover:shadow-gold-200 select-none transition-all ease-in-out duration-300 w-[45%] md:w-[70%] bg-neutral-100 cursor-pointer hover:-translate-y-1 hover:scal-105 max-w-[170px]"
+                onClick={() => openInNewTab(experience.link)}
               ></img>
-              <p className="text-md font-medium text-gold-200">{experience.year}</p>
+              <p className="text-md font-medium text-gold-200">
+                {experience.year}
+              </p>
             </div>
             <div className="w-full max-w-xl md:w-3/4">
-              <h1 className="mb-6 font-semibold">
+              <h1 className="mb-4 font-semibold">
                 {experience.role} -{" "}
-                <span className="text-md text-transparent bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200">
+                <span
+                  className="text-md text-transparent bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 cursor-pointer"
+                  onClick={() => openInNewTab(experience.link)}
+                >
                   {experience.company}
                 </span>
               </h1>
-              <p className="mb-2 text-neutral-300 text-balance">{experience.description}</p>
+              <p className="mb-2 text-neutral-300">{experience.description}</p>
               <div className="flex flex-wrap gap-2">
                 {experience.technologies.map((technology, index) => (
                   <span
