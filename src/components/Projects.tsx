@@ -20,7 +20,7 @@ const Projects = () => {
                 alt={project.title}
                 src={project.image}
               ></img>
-              <span className="flex flex-row gap-4 absolute text-[28px] group-hover:text-neutral-100 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-0">
+              <span className="flex flex-row gap-4 absolute text-0 group-hover:text-[28px] group-hover:text-neutral-100 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-0">
                 <FaGithub
                   className="hover:text-gold-200 transition-all ease-in-out duration-150 cursor-pointer"
                   onClick={() => openInNewTab(project.github)}
@@ -32,10 +32,7 @@ const Projects = () => {
               </span>
             </div>
             <div className="flex flex-col ml-6 sm:ml-[90px] mr-6 sm:mt-0 mt-[60px]">
-              <span
-                className="mt-6 mb-3 font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 cursor-pointer"
-                onClick={() => openInNewTab(project.link)}
-              >
+              <span className="mt-6 mb-3 font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200">
                 {project.title}
               </span>
               <p className="text-balance text-neutral-300 mb-3">

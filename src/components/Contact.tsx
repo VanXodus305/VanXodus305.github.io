@@ -8,27 +8,27 @@ const Contact = () => {
         Get in Touch
       </h1>
       <div className="flex flex-row flex-wrap items-center justify-center gap-[40px] mt-20">
-        <div className="group rounded-2xl p-[2px] bg-transparent hover:bg-gradient-to-r hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 hover:scale-105 hover:shadow-gold-200 hover:shadow-lg transition-all duration-300 ease-in-out">
+        <div className="group rounded-2xl p-[2px] bg-transparent hover:bg-gradient-to-r hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 hover:scale-105 hover:shadow-gold-200 hover:shadow-lg transition-all duration-300 ease-in-out max-w-[100%]">
           <div
-            className="flex flex-row items-center gap-3 cursor-pointer py-4 px-6 bg-transparent group-hover:bg-neutral-800 rounded-2xl transition-all duration-0 ease-in-out"
+            className="flex flex-row flex-wrap justify-center items-center gap-3 cursor-pointer py-4 px-6 bg-transparent group-hover:bg-neutral-800 rounded-2xl transition-all duration-0 ease-in-out"
             onClick={() => openInNewTab("mailto:soumyadeep.30505@gmail.com")}
           >
             <span className="text-[25px] group-hover:text-gold-200">
               <FaEnvelope />
             </span>
-            <h1 className="text-lg">soumyadeep.30505@gmail.com</h1>
+            <p className="truncate">soumyadeep.30505@gmail.com</p>
           </div>
         </div>
 
-        <div className="group rounded-2xl p-[2px] bg-transparent hover:bg-gradient-to-r hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 hover:scale-105 hover:shadow-gold-200 hover:shadow-lg transition-all duration-300 ease-in-out">
+        <div className="group rounded-2xl p-[2px] bg-transparent hover:bg-gradient-to-r hover:from-gold-200 hover:via-gold-100 hover:to-gold-200 hover:scale-105 hover:shadow-gold-200 hover:shadow-lg transition-all duration-300 ease-in-out max-w-[100%]">
           <div
-            className="flex flex-row items-center gap-3 cursor-pointer py-4 px-6 bg-transparent group-hover:bg-neutral-800 rounded-2xl transition-all duration-0 ease-in-out"
+            className="flex flex-row flex-wrap justify-center items-center gap-3 cursor-pointer py-4 px-6 bg-transparent group-hover:bg-neutral-800 rounded-2xl transition-all duration-0 ease-in-out"
             onClick={() => openInNewTab("tel:+91-8617785546")}
           >
             <span className="text-[25px] group-hover:text-gold-200">
               <FaPhoneVolume />
             </span>
-            <h1 className="text-lg">+91-8617785546</h1>
+            <p className="truncate">+91-8617785546</p>
           </div>
         </div>
       </div>
