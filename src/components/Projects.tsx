@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="flex justify-center flex-wrap">
         {PROJECTS.map((project, index) => (
           <div
-            className="group bg-transparent hover:border-gold-200 hover:bg-neutral-800 flex flex-col sm:flex-row flex-shrink rounded-2xl max-w-[380px] border-4 border-neutral-800 items-center relative sm:mx-14 mt-[120px] sm:mt-[80px] transition-all ease-in-out duration-300 hover:shadow-gold-200 hover:shadow-lg hover:scale-[102%]"
+            className="group bg-transparent hover:border-gold-200 hover:bg-neutral-800 flex flex-col sm:flex-row flex-shrink rounded-2xl max-w-[380px] border-4 border-neutral-800 items-center relative sm:mx-14 mt-[120px] sm:mt-[80px] transition-all ease-in-out duration-300 hover:shadow-gold-200 hover:shadow-lg hover:scale-[102%] cursor-default"
             key={index}
           >
             <div className="flex absolute items-center sm:-left-0 sm:transform sm:-translate-x-1/2 -translate-y-1/2 sm:translate-y-0 border-neutral-800 border-4 group-hover:border-gold-100 rounded-2xl transition-all ease-in-out duration-300 bg-neutral-800 select-none shadow-gold-200 shadow-lg">
@@ -20,7 +20,7 @@ const Projects = () => {
                 alt={project.title}
                 src={project.image}
               ></img>
-              <span className="flex flex-row gap-4 absolute text-[28px] group-hover:text-neutral-200 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-0">
+              <span className="flex flex-row gap-4 absolute text-[28px] group-hover:text-neutral-100 font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-0">
                 <FaGithub
                   className="hover:text-gold-200 transition-all ease-in-out duration-150 cursor-pointer"
                   onClick={() => openInNewTab(project.github)}
@@ -32,7 +32,10 @@ const Projects = () => {
               </span>
             </div>
             <div className="flex flex-col ml-6 sm:ml-[90px] mr-6 sm:mt-0 mt-[60px]">
-              <span className="mt-6 mb-3 font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200">
+              <span
+                className="mt-6 mb-3 font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 cursor-pointer"
+                onClick={() => openInNewTab(project.link)}
+              >
                 {project.title}
               </span>
               <p className="text-balance text-neutral-300 mb-3">
