@@ -74,7 +74,7 @@ export const EXPERIENCES = [
     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
     technologies: ["HTML", "CSS", "Typescript", "React.js", "Tailwind"],
     logo: "https://i.imgur.com/cH17pPZ.jpg",
-    link: "https://konnexions.dev",
+    link: "https://konnexions.netlify.app",
   },
   {
     year: "2024 - Present",
@@ -104,6 +104,6 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, experience and contact information.",
     technologies: ["HTML", "CSS", "React.js", "Tailwind"],
     link: "https://vanxodus305.github.io",
-    github: "https://github.com/VanXodus305/VanXodus305.github.io"
+    github: "https://github.com/VanXodus305/VanXodus305.github.io",
   },
 ];

@@ -27,22 +27,29 @@ const Projects = () => {
             key={index}
           >
             <div className="flex absolute items-center sm:-left-0 sm:transform sm:-translate-x-1/2 -translate-y-1/2 sm:translate-y-0 group-hover:border-4 group-hover:border-gold-100 rounded-2xl transition-all ease-in-out duration-150 bg-neutral-800 select-none shadow-gold-200 shadow-lg">
-              <img
-                className="max-w-[112px] max-h-[112px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40"
-                alt={project.title}
-                src={project.image}
-              ></img>
-              <span className="flex flex-row gap-4 absolute scale-0 group-hover:scale-100 text-[28px] font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 transition-all ease-in-out duration-300">
-                <FaGithub
-                  className="hover:text-gold-200 text-neutral-100 transition-all ease-in-out duration-150 cursor-pointer"
-                  onClick={() => openInNewTab(project.github)}
-                ></FaGithub>
-                <FaLink
-                  className="hover:text-gold-200 text-neutral-100 transition-all ease-in-out duration-150 cursor-pointer"
-                  onClick={() => openInNewTab(project.link)}
-                ></FaLink>
-              </span>
+              <motion.div
+                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0 }}
+                transition={{ duration: 0.75, ease: "easeInOut" }}
+              >
+                <img
+                  className="max-w-[112px] max-h-[112px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40"
+                  alt={project.title}
+                  src={project.image}
+                ></img>
+                <span className="flex flex-row gap-4 absolute scale-0 group-hover:scale-100 text-[28px] font-medium text-transparent items-center justify-between transform translate-x-1/2 -left-4 bottom-10 transition-all ease-in-out duration-300">
+                  <FaGithub
+                    className="hover:text-gold-200 text-neutral-100 transition-all ease-in-out duration-150 cursor-pointer"
+                    onClick={() => openInNewTab(project.github)}
+                  ></FaGithub>
+                  <FaLink
+                    className="hover:text-gold-200 text-neutral-100 transition-all ease-in-out duration-150 cursor-pointer"
+                    onClick={() => openInNewTab(project.link)}
+                  ></FaLink>
+                </span>
+              </motion.div>
             </div>
+
             <motion.div
               whileInView={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}

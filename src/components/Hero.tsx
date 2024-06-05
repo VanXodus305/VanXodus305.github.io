@@ -46,7 +46,7 @@ const Hero = () => {
                   1500,
                   "Tech Enthusiast",
                   1500,
-                  "Opwn Source Explorer",
+                  "Open Source Explorer",
                   1500,
                   "Certified Nerd",
                   1500,
@@ -61,7 +61,7 @@ const Hero = () => {
               initial="hidden"
               whileInView="visible"
             >
-              <p className="mt-2 max-w-[85%] pt-6 font-normal tracking-tight mb-10 md:mb-0 text-balance">
+              <p className="max-w-[85%] pt-6 font-normal tracking-tight mb-10 md:mb-0 text-balance">
                 {HERO_CONTENT}
               </p>
             </motion.div>
