@@ -6,10 +6,16 @@ import {
 } from "react-icons/fa6";
 import logo from "/logo.svg";
 import openInNewTab from "../utilities/openLink";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="mb-8 flex items-center justify-between py-4 flex-col xs:flex-row select-none">
+    <motion.nav
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: -100 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="mb-8 flex items-center justify-between py-4 flex-col xs:flex-row select-none"
+    >
       <div className="flex flex-shrink-0 items-center justify-center mb-3 xs:mb-0">
         <img src={logo} alt="logo" className="w-24 h-24" />
       </div>
@@ -47,7 +53,7 @@ const Navbar = () => {
           <span className="navbar-tooltip group-hover:scale-100">X</span>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

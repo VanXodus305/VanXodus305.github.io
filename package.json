@@ -10,11 +10,12 @@
     "preview": "vite preview --port 8080"
   },
   "dependencies": {
-    "framer": "^2.4.1",
+    "framer": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "latest",
-    "react-tilty": "latest"
+    "react-tilty": "latest",
+    "react-type-animation": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",

@@ -26,9 +26,9 @@ const Projects = () => {
             className="group bg-transparent hover:border-gold-200 hover:bg-neutral-800 flex flex-col sm:flex-row flex-shrink rounded-2xl max-w-[380px] border-4 border-neutral-800 items-center relative sm:mx-14 mt-[120px] sm:mt-[80px] transition-all ease-in-out duration-300 hover:shadow-gold-200 hover:shadow-lg hover:scale-[102%] cursor-default"
             key={index}
           >
-            <div className="flex absolute items-center sm:-left-0 sm:transform sm:-translate-x-1/2 -translate-y-1/2 sm:translate-y-0 border-neutral-800 border-4 group-hover:border-gold-100 rounded-2xl transition-all ease-in-out duration-150 bg-neutral-800 select-none shadow-gold-200 shadow-lg">
+            <div className="flex absolute items-center sm:-left-0 sm:transform sm:-translate-x-1/2 -translate-y-1/2 sm:translate-y-0 group-hover:border-4 group-hover:border-gold-100 rounded-2xl transition-all ease-in-out duration-150 bg-neutral-800 select-none shadow-gold-200 shadow-lg">
               <img
-                className="max-w-[110px] max-h-[110px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40"
+                className="max-w-[112px] max-h-[112px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40"
                 alt={project.title}
                 src={project.image}
               ></img>
@@ -49,8 +49,10 @@ const Projects = () => {
               transition={{ duration: 0.75, ease: "easeInOut" }}
               className="flex flex-col ml-6 sm:ml-[90px] mr-6 sm:mt-0 mt-[60px]"
             >
-              <span className="mt-6 mb-3 font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200">
-                {project.title}
+              <span className="mt-6 mb-3">
+                <span className="font-semibold text-transparent text-md bg-clip-text bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200">
+                  {project.title}
+                </span>
               </span>
               <p className="text-balance text-neutral-300 mb-3">
                 {project.description}
