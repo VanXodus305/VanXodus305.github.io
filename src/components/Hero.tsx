@@ -61,11 +61,11 @@ const Hero = () => {
               initial="hidden"
               whileInView="visible"
             >
-              <p className="max-w-[85%] pt-6 font-normal tracking-tight mb-10 md:mb-0 text-balance">
+              <p className="max-w-[85%] pt-6 font-normal mb-10 md:mb-0 text-balance">
                 {HERO_CONTENT}
               </p>
             </motion.div>
-          </div>
+          </div>  
         </div>
         <div className="w-full md:w-[40%] lg:w-1/3 items-center justify-center flex">
           <motion.div

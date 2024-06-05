@@ -1,4 +1,4 @@
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With around 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to develop innovative solutions that solve common problems and deliver exceptional user experiences.`;
 
 export const TECHNOLOGIES = [
   {
@@ -53,7 +53,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Web Developer",
     company: "GDSC KIIT",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
+    description: `Participated in the Google Cloud Gen AI Study Jam in May 2024. Currently working on rebuilding the official website of GDSC KIIT from scratch.`,
     technologies: ["React.js", "Tailwind", "GCP", "Gemini API"],
     logo: "https://dsckiit.in/dsc_logo.png",
     link: "https://dsckiit.in",
@@ -62,7 +62,7 @@ export const EXPERIENCES = [
     year: "2023 - Present",
     role: "Web Developer",
     company: "E Labs KIIT",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+    description: `Assisted in the organization of a 3-day workshop on Game Development using Unity in April 2024. Currently working on the development of resources for an upcoming event in collaboration with the UI/UX domain.`,
     technologies: ["HTML", "CSS", "React.js", "Figma"],
     logo: "https://i.imgur.com/fsxrkS0.png",
     link: "https://elabskiit.in",
@@ -71,7 +71,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Backend Developer",
     company: "Konnexions",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+    description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Currently working on revamping the official website of Konnexions.`,
     technologies: ["HTML", "CSS", "Typescript", "React.js", "Tailwind"],
     logo: "https://i.imgur.com/cH17pPZ.jpg",
     link: "https://konnexions.netlify.app",
@@ -80,7 +80,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Administrative Coordinator",
     company: "GFG KIIT",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
+    description: `Had participated in Relaython - A team based hackathon in January 2024. Currently serving as the POC for the Core Dev domain and also working on the development of an Online Music Player App.`,
     technologies: ["TypeScript", "React.js", "Node.js", "MongoDB"],
     logo: "https://i.imgur.com/7jWLDZ4.png",
     link: "https://gfgrecweb.web.app",
