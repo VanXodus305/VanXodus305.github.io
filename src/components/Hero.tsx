@@ -65,7 +65,7 @@ const Hero = () => {
                 {HERO_CONTENT}
               </p>
             </motion.div>
-          </div>  
+          </div>
         </div>
         <div className="w-full md:w-[40%] lg:w-1/3 items-center justify-center flex">
           <motion.div
