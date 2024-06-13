@@ -2,46 +2,55 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 
 export const TECHNOLOGIES = [
   {
+    title: "HTML",
     logo: "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg",
     link: "https://html.spec.whatwg.org",
     alt: "HTML5 Logo",
   },
   {
+    title: "CSS",
     logo: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
     link: "https://www.w3.org/Style/CSS",
     alt: "CSS3 Logo",
   },
   {
-    logo: "https://nodejs.org/static/logos/jsIconGreen.svg",
-    link: "https://nodejs.org",
-    alt: "Node.js Logo",
-  },
-  {
+    title: "TypeScript",
     logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
     link: "https://www.typescriptlang.org",
     alt: "TypeScript Logo",
   },
   {
+    title: "React",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     link: "https://react.dev",
     alt: "React Logo",
   },
   {
+    title: "Next.js",
+    logo: "https://svgshare.com/i/178j.svg",
+    link: "https://nextjs.org",
+    alt: "Next.js Logo",
+  },
+  {
+    title: "MongoDB",
     logo: "https://svgshare.com/i/16Uj.svg",
     link: "https://www.mongodb.com",
     alt: "MongoDB Logo",
   },
   {
+    title: "Tailwind CSS",
     logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
     link: "https://tailwindcss.com/",
     alt: "Tailwind CSS Logo",
   },
   {
+    title: "Java",
     logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
     link: "https://www.java.com",
     alt: "Java Logo",
   },
   {
+    title: "C",
     logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
     link: "https://www.open-std.org/jtc1/sc22/wg14",
     alt: "C Logo",
@@ -54,7 +63,7 @@ export const EXPERIENCES = [
     role: "Web Developer",
     company: "GDSC KIIT",
     description: `Participated in the Google Cloud Gen AI Study Jam in May 2024. Currently working on rebuilding the official website of GDSC KIIT from scratch.`,
-    technologies: ["React.js", "Tailwind", "GCP", "Gemini API"],
+    technologies: ["React.js", "Tailwind", "GCP", "Gemini API", "Next.js"],
     logo: "https://dsckiit.in/dsc_logo.png",
     link: "https://dsckiit.in",
   },
@@ -72,7 +81,7 @@ export const EXPERIENCES = [
     role: "Backend Developer",
     company: "Konnexions",
     description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Currently working on revamping the official website of Konnexions.`,
-    technologies: ["HTML", "CSS", "Typescript", "React.js", "Tailwind"],
+    technologies: ["HTML", "CSS", "Typescript", "React.js", "Tailwind", "Next.js"],
     logo: "https://i.imgur.com/cH17pPZ.jpg",
     link: "https://konnexions.netlify.app",
   },

@@ -39,6 +39,7 @@ const Technologies = () => {
             variants={iconVariants(Math.round((Math.random() * 4 + 2) * 2) / 2)}
             initial="initial"
             animate="animate"
+            className="group"
           >
             <Icon size={80} link={icon.link}>
               <img

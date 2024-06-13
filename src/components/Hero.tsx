@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/Profile Picture.jpg";
+import profilePic from "/Profile Picture.jpg";
 import Tilty from "react-tilty";
 import isTouchDevice from "../utilities/isTouchDevice";
 import { motion } from "framer-motion";
