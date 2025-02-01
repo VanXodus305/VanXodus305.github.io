@@ -33,7 +33,7 @@ const Projects = () => {
                 transition={{ duration: 0.75, ease: "easeInOut" }}
               >
                 <img
-                  className="max-w-[112px] max-h-[112px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40"
+                  className="max-w-[112px] max-h-[112px] rounded-2xl transition-all ease-in-out duration-300 group-hover:blur-sm group-hover:opacity-40 object-cover aspect-square"
                   alt={project.title}
                   src={project.image}
                 ></img>

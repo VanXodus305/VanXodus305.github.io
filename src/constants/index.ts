@@ -59,40 +59,47 @@ export const TECHNOLOGIES = [
 
 export const EXPERIENCES = [
   {
+    year: "2023 - Present",
+    role: "Assistant Lead - Web Development",
+    company: "E Labs KIIT",
+    description: `Supervising the on-going projects in the Web Development domain. Currently working on the development of the official website of the society. Had also volunteered in various workshops covering domains like Data Analytics and Game Development.`,
+    technologies: ["HTML", "CSS", "React.js", "Figma"],
+    logo: "https://i.imgur.com/ZTA9yNE.png",
+    link: "https://e-labs-official-website.vercel.app",
+  },
+  {
     year: "2024 - Present",
     role: "Web Developer",
     company: "GDG KIIT",
-    description: `Participated in the Google Cloud Gen AI Study Jams in May and October 2024. Currently working on rebuilding the official website of GDSC KIIT from scratch.`,
+    description: `Participated in the Google Cloud Gen AI Study Jams in May and October 2024. Currently working on a web based slider puzzle game. Had also volunteered in 2 AI/ML sessions - Hallucinate and Overthinking.`,
     technologies: ["React.js", "Tailwind", "GCP", "Gemini API", "Next.js"],
     logo: "https://dsckiit.in/dsc_logo.png",
-    link: "https://dsckiit.in",
-  },
-  {
-    year: "2023 - Present",
-    role: "Web Developer",
-    company: "E Labs KIIT",
-    description: `Assisted in the organization of a 3-day workshop on Game Development using Unity in April 2024. Currently working on the development of the official website of the society.`,
-    technologies: ["HTML", "CSS", "React.js", "Figma"],
-    logo: "https://i.imgur.com/fsxrkS0.png",
-    link: "https://elabskiit.in",
-  },
-  {
-    year: "2024 - Present",
-    role: "Backend Developer",
-    company: "Konnexions",
-    description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Currently working on revamping the official website of Konnexions.`,
-    technologies: ["HTML", "CSS", "Typescript", "React.js", "Tailwind", "Next.js"],
-    logo: "https://i.imgur.com/cH17pPZ.jpg",
-    link: "https://konnexions.netlify.app",
+    link: "https://gdg.community.dev/gdg-on-campus-kalinga-institute-of-industrial-technology-bhubaneswar-india",
   },
   {
     year: "2024 - Present",
     role: "Administrative Coordinator",
     company: "GFG KIIT",
     description: `Had participated in Relaython - A team based hackathon in January 2024. Currently serving as the POC for the Core Dev domain and also working on the development of an Online Games Website`,
-    technologies: ["TypeScript", "React.js", "Node.js", "MongoDB"],
+    technologies: ["TypeScript", "React.js", "Node.js", "MongoDB", "Socket.io"],
     logo: "https://i.imgur.com/7jWLDZ4.png",
-    link: "https://gfgrecweb.web.app",
+    link: "https://gfgkiit.in",
+  },
+  {
+    year: "2024 - Present",
+    role: "Web Developer",
+    company: "Konnexions",
+    description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Currently working on revamping the official website of Konnexions.`,
+    technologies: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.js",
+      "Tailwind",
+      "Next.js",
+    ],
+    logo: "https://i.imgur.com/cH17pPZ.jpg",
+    link: "https://www.konnexions.dev",
   },
 ];
 
@@ -114,5 +121,15 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React.js", "Tailwind"],
     link: "https://vanxodus305.github.io",
     github: "https://github.com/VanXodus305/VanXodus305.github.io",
+  },
+  {
+    title: "Online Games Website",
+    image:
+      "https://kiit-gfg-online-games.vercel.app/images/online%20game%20logo.png",
+    description:
+      "A website hosting a collection of fun multiplayer online games like Tic Tac Toe, Chain Reaction, and more.",
+    technologies: ["React.js", "Tailwind", "Next UI", "Socket.io"],
+    link: "https://kiit-gfg-online-games.vercel.app",
+    github: "https://github.com/VanXodus305/Online-Games",
   },
 ];
