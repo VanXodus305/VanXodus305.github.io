@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa6";
 import logo from "/logo.svg";
 import openInNewTab from "../utilities/openLink";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   return (

@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "/Profile Picture.jpg";
 import Tilty from "react-tilty";
 import isTouchDevice from "../utilities/isTouchDevice";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { TypeAnimation } from "react-type-animation";
 
 const container = (position: number, delay: number) => ({

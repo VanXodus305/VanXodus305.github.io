@@ -1,6 +1,6 @@
 import { FaEnvelope, FaPhoneVolume } from "react-icons/fa6";
 import openInNewTab from "../utilities/openLink";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (

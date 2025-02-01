@@ -27,13 +27,13 @@ export const TECHNOLOGIES = [
   },
   {
     title: "Next.js",
-    logo: "https://svgshare.com/i/178j.svg",
+    logo: "/icons/nextjs-icon-dark-background.svg",
     link: "https://nextjs.org",
     alt: "Next.js Logo",
   },
   {
     title: "MongoDB",
-    logo: "https://svgshare.com/i/16Uj.svg",
+    logo: "/icons/MongoDB_Logomark_SpringGreen.svg",
     link: "https://www.mongodb.com",
     alt: "MongoDB Logo",
   },

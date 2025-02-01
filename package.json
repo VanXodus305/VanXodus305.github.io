@@ -10,7 +10,7 @@
     "preview": "vite preview --port 8080"
   },
   "dependencies": {
-    "framer": "latest",
+    "motion": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "latest",
@@ -23,12 +23,12 @@
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "@vitejs/plugin-react": "latest",
-    "autoprefixer": "latest",
+    "autoprefixer": "^10.4.20",
     "eslint": "latest",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
     "typescript": "latest",
     "vite": "latest"
   }

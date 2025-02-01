@@ -1,6 +1,6 @@
 import Icon from "./Icon";
 import { TECHNOLOGIES } from "../constants";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const iconVariants: any = (duration: number) => ({
   initial: { scale: 0.8 },

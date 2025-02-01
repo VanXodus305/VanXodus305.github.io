@@ -1,7 +1,7 @@
 import { FaGithub, FaLink } from "react-icons/fa6";
 import { PROJECTS } from "../constants";
 import openInNewTab from "../utilities/openLink";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 const Projects = () => {
   return (
