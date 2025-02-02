@@ -23,7 +23,7 @@ const Projects = () => {
       >
         {PROJECTS.map((project, index) => (
           <div
-            className="group bg-transparent hover:border-gold-200 hover:bg-neutral-800 flex flex-col sm:flex-row flex-shrink rounded-2xl max-w-[400px] border-4 border-neutral-800 items-center relative sm:mx-14 mt-[120px] sm:mt-[80px] transition-all ease-in-out duration-300 hover:shadow-gold-200 hover:shadow-lg hover:scale-[102%] cursor-default"
+            className="group bg-transparent hover:border-gold-200 hover:bg-neutral-800 flex flex-col sm:flex-row flex-shrink rounded-2xl max-w-[380px] border-4 border-neutral-800 items-center relative sm:mx-14 mt-[120px] sm:mt-[80px] transition-all ease-in-out duration-300 hover:shadow-gold-200 hover:shadow-lg hover:scale-[102%] cursor-default"
             key={index}
           >
             <div className="flex absolute items-center sm:-left-0 sm:transform sm:-translate-x-1/2 -translate-y-1/2 sm:translate-y-0 group-hover:border-4 group-hover:border-gold-100 rounded-2xl transition-all ease-in-out duration-150 bg-neutral-800 select-none shadow-gold-200 shadow-lg">
