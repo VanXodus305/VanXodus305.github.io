@@ -132,4 +132,14 @@ export const PROJECTS = [
     link: "https://kiit-gfg-online-games.vercel.app",
     github: "https://github.com/VanXodus305/Online-Games",
   },
+  {
+    title: "Stock Predictor",
+    image:
+      "https://stock-predictor-project.vercel.app/logo_full.jpg",
+    description:
+      "A web app that shows the stock price data of a company and predicts the future trends using machine learning.",
+    technologies: ["React.js", "Tailwind", "Axios", "Chart.js"],
+    link: "https://stock-predictor-project.vercel.app",
+    github: "https://github.com/VanXodus305/Stock-Predictor",
+  },
 ];
