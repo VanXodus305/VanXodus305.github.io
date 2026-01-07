@@ -1,5 +1,3 @@
-import { title } from "motion/react-client";
-
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With around 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to develop innovative solutions that solve common problems and deliver exceptional user experiences.`;
 
 export const TECHNOLOGIES = [
@@ -119,7 +117,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Web Developer",
     company: "GDG KIIT",
-    description: `Participated in the Google Cloud Gen AI Study Jams in May and October 2024. Currently working on a web based slider puzzle game. Had also volunteered in 2 AI/ML sessions - Hallucinate and Overthinking.`,
+    description: `Participated in the Google Cloud Gen AI Study Jams in May and October 2024. Also worked on a web based slider puzzle game. Had also volunteered in 2 AI/ML sessions - Hallucinate and Overthinking.`,
     technologies: ["React.js", "Tailwind", "GCP", "Gemini API", "Next.js"],
     logo: "https://dsckiit.in/dsc_logo.png",
     link: "https://gdg.community.dev/gdg-on-campus-kalinga-institute-of-industrial-technology-bhubaneswar-india",
@@ -128,7 +126,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Administrative Coordinator",
     company: "GFG KIIT",
-    description: `Had participated in Relaython - A team based hackathon in January 2024. Currently serving as the POC for the Core Dev domain and also working on the development of an Online Games Website`,
+    description: `Had participated in Relaython - A team based hackathon in January 2024. Currently serving as the POC for the Systems Dev domain and also working on the development of an Online Games Website as well as on a Healthcare Accessibility Project.`,
     technologies: ["TypeScript", "React.js", "Node.js", "MongoDB", "Socket.io"],
     logo: "https://i.imgur.com/7jWLDZ4.png",
     link: "https://gfgkiit.in",
@@ -137,7 +135,7 @@ export const EXPERIENCES = [
     year: "2024 - Present",
     role: "Web Developer",
     company: "Konnexions",
-    description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Currently working on revamping the official website of Konnexions.`,
+    description: `Had participated in KodesSphere 1.0 (Konnexweb) - A team based hackathon on Web Development in March 2024. Also developed a mini game for an event as well as other web projects including a Section Swapping system.`,
     technologies: [
       "HTML",
       "CSS",
