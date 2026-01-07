@@ -39,8 +39,12 @@ const Technologies = () => {
             variants={iconVariants(Math.round((Math.random() * 4 + 2) * 2) / 2)}
             initial="initial"
             animate="animate"
-            className="group"
+            className="group relative"
+            key={index}
           >
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-2 bg-gold-200 text-neutral-900 text-sm font-medium rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-200 pointer-events-none z-10">
+              {icon.title}
+            </div>
             <Icon size={80} link={icon.link}>
               <img
                 key={index}
